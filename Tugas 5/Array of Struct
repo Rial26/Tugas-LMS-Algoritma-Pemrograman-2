@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+struct mhs
+{
+  long long stambuk;
+  string nama;
+  long long no_telp;
+};
+
+int main(){
+
+	struct mhs p1 = {13020190027,"A Muh Fahrial S",81342608949};
+  	struct mhs p2;
+  	p2 = p1;
+
+  	cout << "Stambuk : " << p2.stambuk << endl;
+  	cout << "Nama : " << p2.nama << endl;
+  	cout << "Nomor Telpon : " << p2.no_telp << endl;
+	return 0;
+}
